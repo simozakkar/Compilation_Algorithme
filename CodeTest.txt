@@ -1,0 +1,54 @@
+Fonction somme(i,j:ENTIER):ENTIER
+VAR S:ENTIER;
+Debut
+	S=i+j;
+	Renvoyer S;
+Fin
+Procedure Afficher(S:ENTIER)
+Debut
+	Ecrire("La somme de A et B est ",S);
+Fin
+
+Algorithme CodeGenere;
+VAR 
+	A,B=-6,Som,P=-66: ENTIER;
+	i=+6,k[4]:ENTIER;
+CONST str1[40]="Hello ":CHAR;
+
+	str2[40]="World !":CHAR;
+	s:ENTIER;
+VAR	str3[30]:char;
+Debut
+	ecrire("A:")
+	Lire(A)
+	Ecrire("B:")
+	lire(B)
+	A=A+B-3+3;
+	Som=somme(A,B);
+	Afficher(Som);
+	lire(P,i)
+	str3=str1+str2;
+	Ecrire(str3);
+	lire(str3)
+	ecrire(str3)
+	P=4;
+	Cas P vaut
+		1,5 : Ecrire("La somme de A et B est impaire") Break 
+		2 : Ecrire("La somme de A et B est impaire") Break 
+		Sinon : Ecrire("La somme de A et B est paire") Break 
+	FinCas
+	Si(Som>10)Alors
+		Ecrire("La somme de A et B est ",Som,">10\n")
+	Sinon Ecrire("La somme de A et B est ",Som,"<10\n")
+	FinSi
+	rep
+		lire(i);
+	jus(i>5)
+	Pour i 0_10
+		Ecrire("HI\n");;;;
+	FinPour;
+	tantque(i>9)faire
+		ecrire("i>9")
+		i=8;
+	fintantque
+Fin
